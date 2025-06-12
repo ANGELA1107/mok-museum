@@ -1,0 +1,343 @@
+/************************** CSS変数 ***************************/
+
+:root {
+    --backGroundColor: #e7e7eb;
+    --accentColor: #5e0404;
+    --darkColor: #3f4551;
+    --whiteColor: #fcfcfc;
+}
+
+/************************** サイト共通 ***************************/
+
+html {
+    /* ページ内スクロールをなめらかにアニメーションさせるための記述 */
+    scroll-behavior: smooth;
+}
+
+img {
+    /* 画像を伸縮させるために必須の記述 */
+    max-width: 100%;
+    height: auto;
+}
+
+iframe {
+    /* iframeをレスポンシブにするための記述 */
+    width: 100%;
+    height: 100%;
+}
+
+/************************** フォント ***************************/
+
+body {
+    font-family: "Murecho", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.875rem;
+    color: var(--darkColor);
+    line-height: 1.5;
+}
+
+/************************** サイト共用パーツ ***************************/
+
+/* コンテンツ幅を決めたい場所を包む */
+.contentsWrap {
+    margin-inline: auto;
+    background: var(--backGroundColor);
+    padding: 2rem;
+    /* margin-bottom: 20rem; */
+}
+
+/* GALLERYからの背景色をつける範囲を包む
+.backgroundWrap {
+    background-color: var(--backGroundColor);
+} */
+
+h2 {
+    background-color: var(--backGroundColor);
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+section {
+    background-color: var(--backGroundColor);
+    padding-inline: 1rem;
+}
+
+/************************** ヘッダー ***************************/
+
+header {
+    background: var(--backGroundColor);
+}
+
+header .firstView {
+    height: 624px;
+    background: url(../images/mainvisual.jpg) no-repeat center center / cover;
+    padding: 1rem;
+}
+
+header h1 {
+    width: fit-content;
+    border-radius: 1rem;
+    padding-block: 1rem;
+}
+
+header h1 .icon {
+    width: 80px;
+    aspect-ratio: 1/1;
+}
+
+header h1 .logo {
+    font-weight: 700;
+    color: var(--whiteColor);
+    font-size: 10rem;
+}
+header h1 .name {
+    font-weight: 200;
+    color: var(--whiteColor);
+    font-size: 2rem;
+}
+
+header nav {
+    margin-top: 2rem;
+    /* margin-block-start: 2rem; */
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+header nav ul li a {
+    font-size: 1rem;
+}
+
+/************************** メイン ***************************/
+
+/****** ABOUT ******/
+main #about .about_image img {
+    width: 100%;
+    height: 312px;
+    object-fit: cover;
+}
+
+main #about p {
+    margin-top: 32px;
+    /* margin-block-start: 32px; */
+}
+
+/****** NEWS ******/
+
+main #news dl dt {
+    /* destyle.cssがdtをbold(700)に変更しているので、こちらで標準の太さにしている */
+    font-weight: 400;
+}
+
+main #news dl .news_contents {
+    border-top: 2px solid var(--darkColor);
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+main #news dl .news_contents:last-child {
+    border-bottom: 2px solid var(--darkColor);
+}
+
+main #news .readmore {
+    margin-top: 24px;
+    text-align: right;
+}
+
+main #news .readmore button a {
+    display: block;
+    background-color: var(--accentColor);
+    color: var(--whiteColor);
+    padding: 8px 38px;
+    border-radius: 8px;
+}
+
+/****** GALLERY ******/
+main #gallery {
+    padding-block: 56px;
+}
+
+main #gallery .gallery_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+main #gallery .gallery_box .gallery_image {
+    flex-basis: calc((100% / 3) - (2rem / 3));
+}
+
+.fixed-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/sectionimg1.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.section.reveal-section {
+    margin-bottom: 20rem;
+}
+
+/****** MAP ******/
+main #MAP {
+    display: flex;
+    margin: 0 auto;
+    padding-block: 56px 112px;
+    align-items: center;
+}
+main #MAP iframe {
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    aspect-ratio: 4/3;
+    margin-inline: auto;
+}
+
+main .mapinfo {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 2rem;
+}
+
+main .mapinfo img {
+    width: 30px;
+}
+
+main .mapinfo p:first-child,
+main .mapinfo p:nth-child(4),
+main .mapinfo p:nth-child(6) {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+main .mapinfo p:nth-child(8),
+main .mapinfo p:nth-child(10) {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/****** ACCESS ******/
+
+.access-table {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.access-table th,
+.access-table td {
+    padding: 14px 20px;
+    border: 1px solid #ddd;
+    word-break: normal;
+}
+.access-table th {
+    width: 240px;
+    background: #f5f5f5;
+    text-align: left;
+}
+
+.access-table td {
+    background: #fcfcfc;
+}
+
+/************************** フッター ***************************/
+
+footer {
+    background-color: var(--accentColor);
+    padding-block: 32px;
+    text-align: center;
+}
+
+footer small {
+    font-size: 1rem;
+    color: var(--whiteColor);
+}
+
+/************************** max-width:800px ***************************/
+
+@media screen and (max-width: 800px) {
+    header h1 .icon {
+        width: 40px;
+        aspect-ratio: 1/1;
+    }
+    header h1 .logo {
+        font-weight: 700;
+        color: var(--whiteColor);
+        font-size: 7rem;
+    }
+    header h1 .name {
+        font-weight: 200;
+        color: var(--whiteColor);
+        font-size: 1rem;
+    }
+    main #MAP {
+        display: block;
+        margin: 0 auto;
+        padding-block: 56px 112px;
+    }
+
+    main .mapinfo {
+        margin: 0 auto;
+        justify-content: center;
+        text-align: center;
+        font-size: 0.9rem;
+        padding: 2rem;
+    }
+
+    main #gallery .gallery_box .gallery_image {
+        flex-basis: calc((100% / 2) - (1rem / 2));
+    }
+}
+
+.access-table th,
+.access-table td {
+    padding: 14px 20px;
+    border: 1px solid #ddd;
+    word-break: normal;
+}
+.access-table th {
+    width: 30%;
+    background: #f5f5f5;
+    text-align: left;
+}
+
+.access-table td {
+    background: #fcfcfc;
+}
+
+/************************** max-width:500px ***************************/
+
+@media screen and (max-width: 500px) {
+    main .contentsWrap #news dl .news_contents {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0px;
+        padding: 16px 0 16px 16px;
+    }
+
+    main #gallery .gallery_box .gallery_image {
+        flex-basis: 100%;
+    }
+}

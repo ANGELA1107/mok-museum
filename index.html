@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>京都・岡崎ギャラリー MOK</title>
+    <meta name="description" content="HTML/CSSレスポンシブのwebサイトです。" />
+    <!-- リセットCSS -->
+    <link rel="stylesheet" href="css/destyle.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Murecho:wght@100..900&display=swap" rel="stylesheet" />
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+    <!-- ***************************** ヘッダー *****************************-->
+    <header>
+        <!-- メインビジュアル -->
+        <div class="firstView">
+            <!-- ロゴ -->
+            <h1>
+                <div class="logo">MOK</div>
+                <div class="name">京都岡崎ギャラリーミュージアム</div>
+            </h1>
+        </div>
+
+        <!-- ナビゲーションメニュー -->
+        <nav>
+            <ul>
+                <li><a href="#">TOP</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#news">NEWS</a></li>
+                <li><a href="#gallery">GALLERY</a></li>
+                <li><a href="#MAP">MAP</a></li>
+                <li><a href="#ACCESS">ACCESS</a></li>
+            </ul>
+        </nav>
+
+
+        <button id="drawerButton" class="menu-toggle">
+
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+
+        </button>
+    </header>
+
+    <!-- ***************************** メイン *****************************-->
+    <main>
+        <!-- galleryまでのコンテンツを囲って横幅を指定しているdiv -->
+        <div class="contentsWrap">
+
+            <!-- アバウト -->
+            <section id="about">
+                <h2>ABOUT</h2>
+
+                <div class="about_image">
+                    <img src="images/section01image.jpg" alt="ピンク色の空の写真">
+                </div>
+
+                <p>
+                    京都・岡崎に2024年2月に開館した「京都・岡崎ギャラリーMOK」。芸術と伝統的な建築の雰囲気を兼ね備えた京都に、伝統を受け継ぎながらも新しい価値観とインスピレーションを提供するために京都市文化協会の後援のもと誕生しました。
+                    また、カフェ「SHUHATTEN」を併設をしており、コラボレーションにて企画展や音や味など五感を感じられるようなイベント・展示を開催していく予定です。
+
+                </p>
+            </section>
+
+            <!-- ニュース -->
+            <section id="news">
+                <h2>NEWS</h2>
+                <dl>
+                    <!-- 1 -->
+                    <div class="news_contents">
+                        <dt>
+                            <time datetime="2025-02-28">2025/02.28</time>
+                        </dt>
+                        <dd>
+                            ミュージアムカフェ「SHUHATTEN」内にて、ランチ特別イベント「KORABON Parliamo」を開催
+                        </dd>
+                    </div>
+                    <!-- 2 -->
+                    <div class="news_contents">
+                        <dt>
+                            <time datetime="2024-12-30">2024/12.30</time>
+                        </dt>
+                        <dd>
+                            毎年恒例、ドライフラワーアレンジメントのワークショップが開催決定
+                        </dd>
+                    </div>
+                    <!-- 3 -->
+                    <div class="news_contents">
+                        <dt>
+                            <time datetime="2024-10-08">2024/10.08</time>
+                        </dt>
+                        <dd>
+                            フレグランスブランド「CORIGANO」主催、香りと照明を彩る企画展
+                        </dd>
+                    </div>
+                    <!-- 4 -->
+                    <div class="news_contents">
+                        <dt>
+                            <time datetime="2024-06-01">2024/06.01</time>
+                        </dt>
+                        <dd>
+                            音と照明で空間を体感するコラボレーション企画展を開催決定・前売り券販売開始
+                        </dd>
+                    </div>
+                    <!-- 5 -->
+                    <div class="news_contents">
+                        <dt>
+                            <time datetime="2024-01-08">2024/01.08</time>
+                        </dt>
+                        <dd>
+                            開館記念展として、写真家「セイディー・デイビッド」の「セイディー2024」の開催決定・詳細情報、グッズ情報をアップしました
+                        </dd>
+                    </div>
+                </dl>
+
+                <!-- ボタン -->
+                <div class="readmore">
+                    <button>
+                        <a href="#">READ MORE</a>
+                    </button>
+                </div>
+
+            </section>
+
+        </div><!-- contentsWrap -->
+
+        <div class="backgroundWrap"><!--背景色をつけるためのwrap-->
+
+            <!-- ギャラリー -->
+            <section id="gallery">
+                <h2>GALLERY</h2>
+                <div class="gallery_box contentsWrap">
+                    <div class="gallery_image">
+                        <img src="images/gallary01.jpg" alt="カフェイベント">
+                    </div>
+                    <div class="gallery_image">
+                        <img src="images/gallary02.jpg" alt="フラワーアート">
+                    </div>
+                    <div class="gallery_image">
+                        <img src="images/gallary03.jpg" alt="香りを味わうイベント">
+                    </div>
+                    <div class="gallery_image">
+                        <img src="images/gallary04.jpg" alt="音と照明">
+                    </div>
+                    <div class="gallery_image">
+                        <img src="images/gallary05.jpg" alt="風景写真展">
+                    </div>
+                    <div class="gallery_image">
+                        <img src="images/gallary06.jpg" alt="ディナーイベント">
+                    </div>
+                </div>
+            </section>
+
+            <!-- MAP -->
+            <h2>MAP</h2>
+            <section id="MAP">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3267.7644982954225!2d135.78068881837297!3d35.012599905453676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600108e5fdb0fb75%3A0x32f576fbc1dc5042!2z5Lqs6YO95biC5Yun5qWt6aSoIOOBv-OChOOBk-OCgeOBo-OBmw!5e0!3m2!1sja!2sjp!4v1743318791283!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="mapinfo">
+                    <p>ADDRESS</p>
+                    <p>〒606-8343</p>
+                    京都市左京区岡崎成勝寺町9番地の1</p>
+
+                    <p>TEL</p>
+                    <p>075-762-2630</p>
+
+                    <p>SNS</p>
+                    <p><img src="/images/instagram_icons_museum.png"></p>
+                    <p>@mokmuseum</p>
+                    <p><img src="/images/twitter_icon_museum.png"></p><p>@mok_museum_twitter</p>
+                </div>
+            </section>
+            <div class="fixed-background"></div>
+            <section class="section reveal-section">
+                </section>
+            <section id="ACCESS">
+                <h2>ACCESS</h2>
+                <div class="access-table">
+                    <table class="acstable">
+                    <tbody>
+                        <tr>
+                            <th>最寄駅</th>
+                            <td>京都市営地下鉄東西線 「東山駅」より徒歩約8分</td>
+                        </tr>
+                        <tr>
+                            <th>京都駅から</th>
+                            <td>
+                                <dt>
+                                    京都市営地下鉄
+                                </dt>
+                                <dd>
+                                    <p>京都市営地下鉄
+                                    地下鉄烏丸線～「烏丸御池駅」乗換え～地下鉄東西線～「東山駅（みやこめっせ前）」下車（乗車約15分、徒歩約8分）</p>
+                                </dd>
+                                <dl>
+                                    <dt>市バス</dt>
+                                <dd><p>A1のりば 5,105系統※ 「岡崎公園 美術館・平安神宮前」下車</p></dd>
+                                <dd><p>D1のりば EX100系統※ 「岡崎公園 美術館・平安神宮前」下車</p></dd>
+                                <dd><p>D2のりば 206系統 「東山二条・岡崎公園口」下車</p></dd>
+                                </dl>
+                                <dl>
+                                    <dt>タクシー</dt>
+                                    <dd><p>約20分</p></dd>
+                                </dl>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                四条河原町から
+                            </th>
+                            <td>
+                                <dl>
+                                    <dt>
+                                        市バス
+                                    </dt>
+                                    <dd>
+                                        <p>
+                                            Hのりば 5,105系統※ 「岡崎公園 美術館・平安神宮前」下車</p>
+                                    </dd>
+                                    <dd>
+                                        <p>
+                                            Hのりば 32系統 「岡崎公園 ロームシアター京都・みやこめっせ前」下車
+                                        </p>
+                                    </dd>
+                                    <dd>
+                                    <p>
+                                        Eのりば 46系統 「岡崎公園 ロームシアター京都・みやこめっせ前」下車
+                                    </p>
+                                    </dd>
+                                    <dd>
+                                    <p>
+                                        Eのりば 31,201,203系統 「東山二条・岡崎公園口」下車
+                                        </p>
+                                    </dd>
+                                    <dd>
+                                        <p>※105系統は、土・休日のみ運行</p>
+                                    </dd>
+                                    <dl>
+                                        <dt>タクシー</dt>
+                                        <dd><p>約20分</p></dd>
+                                    </dl>
+                                </dl>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                三条京阪から
+                            </th>
+                            <td>
+                            <dl>
+                                <dt>
+                                    市バス
+                                </dt>
+                                <dd>
+                                    <p>
+                                        Dのりば 5,105系統※「岡崎公園 美術館・平安神宮前」下車
+                                    </p>
+                                </dd>
+                                <dd>
+                                    <p>
+                                        ※105系統は、土・休日のみ運行
+                                    </p>
+                                </dd>
+                                    <dt>タクシー</dt>
+                                    <dd><p>約5分</p></dd>
+                                    <dt>徒歩</dt>
+                                    <dd><p>約14分</p></dd>
+                            </dl>
+                        </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div><!-- backgroundWrap -->
+    </main>
+
+    <!-- ***************************** フッター *****************************-->
+    <footer>
+        <small>&copy;2025 MOK kyoto.</small>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
